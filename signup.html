@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap Elegant Account Login Form with Avatar Icon</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+
+    body {
+        color: #999;
+		background: #f5f5f5;
+		font-family: 'Varela Round', sans-serif;
+	}
+	.form-control {
+		box-shadow: none;
+		border-color: #ddd;
+	}
+	.form-control:focus {
+		border-color: #4aba70; 
+	}
+	.login-form {
+        width: 700px;
+		margin: 0 auto;
+		padding: 30px 0;
+        margin-top:50px;
+        margin-bottom: 30px;
+	}
+    .login-form form {
+        color: #434343;
+		border-radius: 1px;
+    	margin-bottom: 15px;
+        background: #fff;
+		border: 1px solid #f3f3f3;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+	}
+	.login-form h4 {
+		text-align: center;
+		font-size: 22px;
+        margin-bottom: 20px;
+	}
+    .login-form .avatar {
+        color: #fff;
+		margin: 0 auto 30px;
+        text-align: center;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		z-index: 9;
+		background: #4aba70;
+		padding: 15px;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+    .login-form .avatar i {
+        font-size: 62px;
+    }
+    .login-form .form-group {
+        margin-bottom: 20px;
+    }
+	.login-form .form-control, .login-form .btn {
+		min-height: 40px;
+		border-radius: 2px; 
+        transition: all 0.5s;
+	}
+	.login-form .close {
+        position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+	.login-form .btn {
+		background: #4aba70;
+		border: none;
+		line-height: normal;
+	}
+	.login-form .btn:hover, .login-form .btn:focus {
+		background: #42ae68;
+	}
+    .login-form .checkbox-inline {
+        float: left;
+    }
+    .login-form input[type="checkbox"] {
+        margin-top: 2px;
+    }
+    .login-form .forgot-link {
+        float: right;
+    }
+    .login-form .small {
+        font-size: 13px;
+    }
+    .login-form a {
+        color: #4aba70;
+    }
+</style>
+</head>
+<body>
+<div class="login-form">    
+    <form action="/examples/actions/confirmation.php" method="post">
+		<div class="avatar"><img sr="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0ODQ0NDQ0NDQ8NDQ0NFhEWFhYRFRUYHjQgGB0lGxUVITEhJSstLi8uFx83ODUtNzQtLisBCgoKBQUFDgUFDisZExkrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAIsBagMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABgcEBQgBAgP/xABMEAABBAEBAwYHCwgIBwAAAAAAAQIDBBEFBhIhBwgTMVGRFCJBYZTB0RUWJFJUVXGBkqPTIyUzoaKys9ImMmJjcnOxwhc0NUJkdOH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AvEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8VcHp45OC/QBhaLqbLtaG1GyRkU7GyRdKjUe6NyZa7CKuMoucLxM4guhcmunMqwsu1WvssY1kskN250crkTHSIm83dz17qJhM4JbpGlV6MLa9ZixwtVzkaskkiorlyvjPVV6/OBq9sdo10yKGZIUnYsv5dqOVr4qyYWSdOHFGJxVPOhvlcqtyzCqqZaq/1VXHDq8hoNU0KS9ZnWWaaCBKy1I2xJWf00ciZmV3SMdhF8RvkXxF8xkbH17MFCCvbRUmrI6sj1e1/TQxuVkcuUXrcxGqqLxyqgaXTttZnxVrFirEyCxqT9LasM7pJWTJM+Jr1arEy1XM8i5RFN7tFrfgTa7WRLPYt2WVa0W9uNdIqK5XOdjxWta1yquF6iHaHspcpvpXUro6ePUNRbZruljcjqViw9W2GZXdbIxFa7hhVark6+BJdsNLsT+AWajWyT0LrbSQOcjOnjVjo5I0cvBHbr1VFXhlANnpti26SaO1Xjj3EidHLDK6SKZHb2U8ZqK1Wq3in9pDD0zWpZtQ1GlJExiU2VXskY9zllbKj14oqJuqm75zO0y5NNvLLTnqIm7upO+u571XOcJE9yIicOtTR19nUk1bU7VqtFJDNDQZXfIkciq5jJEeiJ1t4q3rA2OyetO1LTa17okidYiV6Rb6vaxd5UxvY49XYfOyWtSajWdYfCyHFixAjGSLL+ildGrlVWp1q1VMbk/02xR0ajVsxq2xBC5skSOY9UdvuXCKi7q9aeU+eT6jYq0XQ2oHwSeF3Zka58T8slsPkaqKxyp1OTPnAytL110l29RsRshlqthnjc16ubPVkRcScUTGHNc1U49RkVdSkmo+Ftja1z43zRMe5266LKqxVXGUVWbq9XBVNNtdoNqe5Ts08Iro5tPvrvoxUoS4cr07XNVvBE8ryS2ocwSRsROMTmManBP6uEQDSbMa5bvQ0rL69eOG3X6dEZYc+aJFaiplqsTKcURVTqVUJGQjYTS5aUOnRSaS+vYiqeDW7ay1NzdRqOXHRyK56q9rOtE61+ubgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADxy8F+g9PFArvSeUaqsOmrY1TT2yzM3tQY9N18D+j3ujbh3i4dlvHJLNltTbcgfMyw21F4ROyKdqMw+NrsJ/VTC44pnzHtZ2lxRsijdRayNrY2NR8OGtamETrNlVdE5iLCsasyuFiVqsz5ergB+wBXG2G3+rUrEtaps9bsKxfFsqkksD2+RzejaufoyioBY58SSNYiue5rWp1ucqNRPrU551fbXbWzlGU7lRi/8AbV0yVq4/xPark+pSGalpO0dtd61V1myuc5nhty4+jeTgB0nq/KLodLKTajXc5OCsgVbL89mI84+sjkXLhobpVYvhjGJ1TOgRWL9TXK79RQXvR1f5r1H0Kf8AlHvR1f5r1H0Kf+UDqbSdutGu4SvqNVzl6mPkSGT7D8KSJrkVEVFRUXqVFyinG/vR1f5r1H0Kf+U2Gl6ftLTX4JX1qtxziGG3G1fpREwoHXIOeNJ2321r4R9K3bamPFs6ZKq4/wATGoveqlmbAbY6pqUz4buizUGxx77rMnSxxudnCMax7cqq8epVxj6AJ2AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB4q8FPQBVzb/ALq4elKxp2nPw6N1bSpZ712JcKj0lbGrIWOT4u85UXrQnezFSpXpxQ0q761dm8jIpIZYJEXPFytkTeyq8cr1mLFtjpiyzwrYSJK6SK+WWN8NZUjduv3JXIjH7q8FwpstH1SG7CliDfWFznIxz43R9IiLjfajuKtXyL5QM4505Z9ptSq65YhrX7cESRVlSOKeRjEVYkVcIi4Oiyo+Xraa7pvualGda7p/Cllc1kblejOiRqZci/GXqApf37az863/AEqX2j37az86X/SpfadAcimsz6npUk116WJmW5YukdHGi7iMYqJ4qJ8ZTd8o911HRr9qvuxTxxN6KRI2OVrle1ucKmPKBzJ79tZ+db/pUvtHv21n50v+lS+0tDkQ2u1HUdUnrXrPhEKUZZWsfFCmJUliRHIqNz1Odw6uJeHQR/EZ9lAOP/ftrPzrf9Kl9o9+2s/Ol/0qX2lnctm1+o6dqkVajZ8Hh8DilcxkUK5kdJIiqqq3PU1pZ3J1cde0ahasbsk8sKrLJ0bGq5yPc3OETHkA5j9+2s/Ot/0qX2lv83vW7t1+qeF27Fno20uj6eV8u5lZs4yvDOE7kNjy67QWtMrUVoy+DPmmlR7mRxqrmNYnDxk7VMvkL1+3qOn2pLkyzyx3Fja9WMY5I+iYqN8VEzxV3eBZIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHjupfoPTxy8F+gCuoNh9Wkq0ILGpUXNp9FJFDLpTbLYpWxq1MvWVOkVu8vjYTKoik50eCzFC1luwyzOiu3pY4PBmK3PBEZvLjCecimkbdRSQ6a+e7pbX2mK+23p2xOqr0e/0e6rl4ovirnHHuJHs7qPhUUkiTRWGNsTxRzQY6N7GuwnFFVFVOpcdgG1KF5yz/AIRpbeyG07vdGnqL6Of+co74bpydlWVe+T/4BJube781XE7NQcvfDH7CQctsu5s7e/tLWb3zsIzzbHfm++nZcavfE32G/wCXZf6PWvPLV/jNAqrm9vxrqp8ajYT9qNfUdLHMnICuNfZ56tlP1Ip02BzLzgH515yfFqVm/vL6y5ORl+9s9p3mbO3umeUny7uztDaTshqp9y1fWXNyIOzs7R8zrKd07wIVzl5P+lM/9t38NDO5tcnwLUW9lqJ3fHj/AGmq5y6/ltK/yrf70Zn82lfyGqJ/fVV/ZkAukAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADx3Up6eO6l+hQNBpGh6NJXidWp0ZYEa1kcng8cm+1ExnfcmX/AOLK5N1UqxQMSOGKOGNFVUZExsbEVeKrhOBBdmNltS8AqNdrGpUnMgjjdV6CluwOa1EWNqrGquamMIuVyhM9Ipy14WxTWpbj0VyrPM2NsjkVcoioxETh1dQGac+85NPh+nr203p3Sr7ToIoLnKt+FaY7trzp3Pb7QN5zbE+A6gv/AJcf8JCQcu6f0eteaaqv3zTR821v5tvL23sd0LPaSHlvj3tnbuPI6s7unYBT/ICn5/j81Wyv7KHThzRzfG511V+LSsL+0xPWdLgcucuzcbQ2/PFVX7lqeoubkObjZ2l532l+/eVDy/Mxr8i/Gq1nfqVPUXLyMM3dntP87Z175ngV5zl/0+lf5Vr96MzubQn5HVV/vaifsyGLzl2ePpTv7Ftv64jO5tTfgupu7bFdO5jvaBc4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHi9XDrAjGs7T2aMfSWqlaJqrusRdQ3pJXeRjGJFvPcvYiKpt9A1Ca3WjnnqSUpH5XweZzXSMbngrsdWU4460I1o2x12B6W5r8U+oPanSWJ6fhD4lVEzFE5XojGIvka1uccSXUY5mRo2eVs0mVzI2LoUVM8E3cr/qBkFF85iLxtIf5FS6xfqWFU/1UvQpvlh26u6fqEdOGpRtQ+CxT/CqrrDmvc+Rq48bCJhieQDYc3SLd0ew749+Ve6KNPUSLlgj3tntSTsijd3SsUp6tyya3C3cipadExOKMjpysai/Qjz2fln1yVjo5KmnyMcmHMfTmexydior8KB9c3RudbnXs02dfvoE9Z0gcxafyqanVVzqumaTXc5MOdDp74nOTOcKrX+Yz/wDjbr/yel6LP+IB+XOIZjXI1+Np8C/eSp6i5OSNm7s/pidsDnd8j19ZSOocqmp2la6zpek2HNTDXTae+VzUznCK55lwcs+uRsbHHU0+NjUw1jKczWNTsREfhAJTzlos19Mk7JrDO9rV9Rmc26PGm3n9t7d7oWL/ALiD2+WHWZ2o2ajpszUXKNlpSyNRe3CvJpyPbd39SvyUp6tKtXbVlsIlWs6vmVJI2/GVOpy+TyIBcIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHinoAh1X30LGxVXR0XdT9K210uPJv7q7u9jGccM5wb/QPDuhd7odB4R0sn/LbyQdHnxN3e49XXny5NkAPmTOFx14XH0lM+5XKD8uh+1U/DLoAFL+5XKD8ug+1U/DHuVyg/LoPtVPwy6ABS/uVyg/LoPtVPwx7lcoPy6D7VT8MugAUv7lcoPy6D7VT8Me5XKD8ug+1U/DLoAFL+5XKD8ug+1U/DP1raXt8kkayXYVjR7FkRHVMqzKZT9H2FxgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//2Q=="></a></div>
+    	<h4 class="modal-title">Sign up for an account</h4>
+       <center> <p>Get your virtual library card! Already have one? <a href="#">Login</a></p></center>
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter Email" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Choose a Screen Name" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password" required="required">
+        </div>
+       
+        <input type="submit" class="btn btn-primary btn-block btn-lg" value="Sign Up"> 
+        </br> 
+       <center> <p><strong>Announcements</strong></p></center>
+       <hr>
+
+        <label class="checkbox-inline"><input type="checkbox">Send me general announcements from the Internet Archive (approx. two per month)</label> </br>
+        <label class="checkbox-inline"><input type="checkbox">Send me announcements about Internet Archive events in the San Francisco Bay Area
+
+</label>     
+        </br>        
+    </form>			
+    <div class="text-center small">By signing up, you agree to the Internet Archive's <a href="#">Terms of Service</a></div>
+</div>
+</body>
+</html>                                		                            

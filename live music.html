@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!--jquery-->
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+      <script>
+         $(function() {
+            $( "#datepicker-7" ).datepicker({
+               defaultDate:+9,
+               dayNamesMin: [ "So", "Mo", "Di", "Mi", "Do", "Fr", "Sa" ],
+               duration: "slow"
+            });
+         });
+      </script>
+      
+
+    <title>Music Form</title>
+    <style>
+#img{
+  width:150px;
+  height:150px;
+
+}
+.form-group row{
+  width:400px;
+}
+    </style>
+
+    <!--script-->
+
+    
+  </head>
+
+  <body>
+
+
+  <div class="card text-center">
+  <div class="card-header">
+    INTERNET ARCHIVE
+  </div>
+
+  <div class="card-body">
+    
+        <div class="card mb-3">
+          <h3>Live music archive uploader
+</h3></br>
+
+      <img src="https://ia802307.us.archive.org/8/items/etree/lma.png" class="rounded mx-auto d-block" alt="..." id="img"></br>
+      <div class="text-center">
+<table>
+
+ <tr>   <li>Upload<a href=""> Live Music Archive activated bands</a>only.Check the band's upload policy notes first.</li></tr>
+   <tr> <li>Please be sure your audio files follow<a href="">etree.org's Naming Standards</a></li></tr>
+</table>
+
+<p>Please fill out the information below so we can create an identifier for your item.</br>
+Required fields are marked with *</p>
+<p>Letters, numbers, periods (.), or underscores (_) are allowed.</p>
+</br>
+
+</div>
+    </br>
+    <div class="container">
+    <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Brand Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel" placeholder="">
+    </div>
+  </div>
+ </br>
+ <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Date(YYYY-MM-DD)</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel" placeholder="" id = "datepicker-7">
+    </div>
+  </div>
+ </br>
+ <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Venue</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel" placeholder="">
+    </div>
+  </div>
+ </br>
+ <div class="form-group row">
+    <label for="colFormLabel" class="col-sm-2 col-form-label">Additional identifier information (optional)</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel" placeholder="">
+    </div>
+  </div>
+ </div>
+</br>
+
+  </div>
+<a href="#" class="btn btn-primary"><i class="fa fa-upload"></i> Upload</a>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
